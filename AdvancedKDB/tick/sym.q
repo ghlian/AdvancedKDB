@@ -1,0 +1,3 @@
+Trade: ([] time: `timestamp$(); sym: `symbol$(); price: `float$(); size: `float$(); seqNum: `long$(); src: `symbol$(); srcTime: `timestamp$(); cond: `symbol$(); status: `symbol$(); side: `char$(); msgrcv: `timestamp$());
+Quote: ([] time: `timestamp$(); sym: `symbol$(); src: `symbol$(); bid: `float$(); ask: `float$(); bsize: `int$(); asize: `int$(); srcTime: `timestamp$(); cond: `symbol$(); layer: `symbol$(); expiryTime: `timestamp$(); msgrcv: `timestamp$());
+Aggregation: ([] time: `timestamp$(); sym: `symbol$(); maxtpx: `float$(); mintpx: `float$(); tvolume: `float$(); maxbpx: `float$(); minbpx: `float$(); bidaskspread: `float$())
