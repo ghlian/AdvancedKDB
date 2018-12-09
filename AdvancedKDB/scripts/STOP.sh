@@ -2,7 +2,7 @@
 
 echo ""
 
-tickProc=$(ps -ef | grep -v "grep" | grep -v "grep" | grep tick.q | wc -l)
+tickProc=$(ps -ef | grep -v "grep" | grep tick.q | wc -l)
 
 if [ "$tickProc" = "1" ]; then
     echo "TICKERPLANT IS RUNNING. DO YOU WANT TO STOP IT (y/n)?"
@@ -14,7 +14,7 @@ if [ "$tickProc" = "1" ]; then
 fi
 echo ""
 
-rdbAggProc=$(ps -ef | grep -v "grep" | grep -v "grep" | grep rdbAggregation.q | wc -l)
+rdbAggProc=$(ps -ef | grep -v "grep" | grep rdbAggregation.q | wc -l)
 
 if [ "$rdbAggProc" = "1" ]; then
     echo "AGGREGATION RDB IS RUNNING. DO YOU WANT TO STOP IT (y/n)?"
@@ -27,7 +27,7 @@ fi
 echo ""
 
 
-rdbTQProc=$(ps -ef | grep -v "grep" | grep -v "grep" | grep rdbTradeQuote.q | wc -l)
+rdbTQProc=$(ps -ef | grep -v "grep" | grep rdbTradeQuote.q | wc -l)
 
 if [ "$rdbTQProc" = "1" ]; then
     echo "TRADE/QUOTE RDB IS RUNNING. DO YOU WANT TO STOP IT (y/n)?"
@@ -40,7 +40,7 @@ if [ "$rdbTQProc" = "1" ]; then
 fi
 echo ""
 
-cepProc=$(ps -ef | grep -v "grep" | grep -v "grep" | grep CEP.q | wc -l)
+cepProc=$(ps -ef | grep -v "grep" | grep CEP.q | wc -l)
 
 if [ "$cepProc" = "1" ]; then
     echo "CEP IS RUNNING. DO YOU WANT TO STOP IT (y/n)?"
@@ -52,7 +52,7 @@ if [ "$cepProc" = "1" ]; then
 fi
 echo ""
 
-fhProc=$(ps -ef | grep -v "grep" | grep -v "grep" | grep mockFeedhandler.q | wc -l)
+fhProc=$(ps -ef | grep -v "grep" | grep mockFeedhandler.q | wc -l)
 
 if [ "$fhProc" = "1" ]; then
     echo "MOCK FEEDHANDLER IS RUNNING. DO YOU WANT TO STOP IT (y/n)?"
